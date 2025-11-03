@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdint.h>
 #include <globalLib.h>
-#include <snakeApp.h>
+#include <tronApp.h>
 char shellBuffer[48];
 int bgColorIndex = 0;
 
@@ -22,7 +22,7 @@ static void help(){
     NewLine();
     //printf("OBSOLETO: REGISTERS - Imprime cada registro y su contenido");
     //NewLine();
-    printf("SNAKE - Comienza el juego");
+    printf("TRON - Comienza el juego");
     NewLine();
     printf("ZERODIV - Causa una excepcion: divide por cero");
     NewLine();
@@ -82,7 +82,7 @@ static void bufferInterpreter(){
         printCurrentTime();
     //} else if(strCompare(shellBuffer, "REGISTERS")){
     //    registers();
-    } else if (strCompare(shellBuffer, "SNAKE")){
+    } else if (strCompare(shellBuffer, "TRON")){
         startGame();
     } else if (strCompare(shellBuffer, "ZERODIV")){
         zeroDivisionTrigger();

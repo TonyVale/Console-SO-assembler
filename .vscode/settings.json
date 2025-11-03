@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "sounddriver.h": "c",
+        "lib.h": "c"
+    }
+}

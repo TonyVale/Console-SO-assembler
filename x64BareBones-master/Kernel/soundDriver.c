@@ -8,6 +8,7 @@
 
 void soundOn(uint32_t freq){
     
+    
     uint32_t div;
     uint8_t stat;
 

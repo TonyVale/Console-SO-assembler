@@ -1,4 +1,4 @@
-#include <snakeApp.h>
+#include <tronApp.h>
 #include <globalLib.h>
 typedef struct {
     char player;
@@ -66,7 +66,7 @@ void startGame(){
     }
     clearGrid();
     gameNotOver = 1;
-    initializeSnakeDisplay();
+    initializeTronDisplay();
     
     printfPos("Score P1: ",36 + 3 * 34, 14, 3 );
     resetFruit();
@@ -276,7 +276,7 @@ void clearGrid(){
     }
 }
 
-void initializeSnakeDisplay(){
+void initializeTronDisplay(){
     ClearScreen(0x003D3D3D);
     int initialY = 44;
     for(int j = 1; j <= 20; j++){
