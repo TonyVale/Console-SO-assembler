@@ -109,7 +109,7 @@ void startShell(){
 	NewLine();
     printf("------------------------------------------------------------------------------------");
 	NewLine();
-    printf("Valentinuzzi Antonio, Reino Mateo");
+    printf("Valentinuzzi Antonio");
     NewLine();
     printf("------------------------------------------------------------------------------------");
     NewLine();
