@@ -28,6 +28,8 @@ static void help(){
     NewLine();
     printf("HARDACCESS - Imprime el tiempo de accesso a Hardware");
     NewLine();
+    printf("PERFORMANCE - Imprime el tiempo en hacer 1 millon de operaciones flotantes");
+    NewLine();
     printf("HELP - Imprime todos los comandos disponibles");
     NewLine();
     NewLine();
@@ -86,11 +88,11 @@ static void bufferInterpreter(){
         zeroDivisionTrigger();
     } else if (strCompare(shellBuffer, "INVOPCODE")){
         invalidOpcodeTrigger();
-    } else if (strCompare(shellBuffer, "HARDACCESS"))
-    {
+    } else if (strCompare(shellBuffer, "HARDACCESS")){
         getHardAccess();
+    }else if (strCompare(shellBuffer, "PERFORMANCE")){
+        getPerformance();
     }
-     
     else {
         printf("Comando no reconocido. Use HELP para mas informacion");
         NewLine();

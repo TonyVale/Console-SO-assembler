@@ -54,4 +54,8 @@ void throw_invalid_opcode();
 
 int getHardAccess();
 
+// Rendimiento sobre 1 millon de operaciones .flotante
+
+int getPerformance();
+
 #endif // GLOBAL_LIB_H

@@ -306,13 +306,15 @@ void invalidOpcodeTrigger(){
 }
 
 int getHardAccess(){
+    
     int start = ticks_elapsed();
-
-    wait(0);
+    
+    /*for(int i = 0; i < 1000000; i++)*/ 
+        drawRectangle(1000, 1000, 1,1, bgColor);
 
     int end = ticks_elapsed();
 
-    int delta = end - start; 
+    int delta = (end - start);
 
     char deltaBuffer[8];
     itoaBase(delta, deltaBuffer, 10);
@@ -321,5 +323,33 @@ int getHardAccess(){
     currentX = currentX + 10;
     printf(" ms");
     NewLine();
+
+    return (delta);
+
+}
+
+int getPerformance(){
+    float result = 0.0;
+
+    int start = ticks_elapsed();
     
+    for (int i = 0; i < 1000000; i++) {
+        result += 1.0;
+        result *= 1.000001;
+        result /= 1.000001;
+    }
+    
+    int end = ticks_elapsed();
+
+    int delta = end - start; 
+
+    char deltaBuffer[8];
+    itoaBase(delta, deltaBuffer, 10);
+
+    printf(deltaBuffer);
+    currentX = currentX + 20;
+    printf(" ms");
+    NewLine();
+
+    return (delta);
 }
