@@ -8,7 +8,7 @@ void gameEngine();
 void gameEngine2P();
 void initializationScreen();
 void clearGrid();
-void initializeSnakeDisplay();
+void initializeTronDisplay();
 void resetFruit();
 void loadp1();
 void loadp2();
