@@ -1,4 +1,6 @@
-# TPE-ARQUI-2025-2Q
+#SO made in assembler with barebonex64.
+
+To run
 
 docker run -d -v ${PWD}:/root --security-opt seccomp:unconfined -it --name TPE  agodio/itba-so:2.0
 
